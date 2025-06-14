@@ -1,0 +1,89 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.rasi_landing_body{
+    max-width: 100%;
+    .zoom-out {cursor: zoom-out;}
+}
+
+.landing {
+    width: 99.2vw;
+    height: 100vh;
+    background-image: url('Images/background.jpg');
+    background-size: cover;
+    color: white;
+    padding: 200px;
+    background-position: center;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+
+}
+
+.landing::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 7em;
+    background-color: rgba(99, 95, 95, 0.5);
+    z-index: 1;
+}
+.landing h2{
+    color: white;
+    font-size:550%;
+    z-index: 2;
+    line-height: 1.5em;
+}
+
+
+.navigation{
+    opacity: 70%;
+    display: flex;
+    max-width: 100%;
+    position: absolute;
+    top: 1cm;
+    z-index: 2;
+    border-radius: 5em;
+    margin-left: 65em;
+
+}
+
+.navigation a{
+    text-decoration: none;
+    color: rgb(5, 43, 17);
+    font-size: xx-large;
+    margin-left: 2em;
+    padding: 0.5cm;
+}
+
+.questions h3{
+    font-size: 350%;
+    margin-top: 2em;
+}
+
+.questions p{
+    font-size: 150%;
+}
+.faqs{
+    display: flex;
+    gap: 5em;
+    margin-left: 20em;
+    margin-top: 5em;
+    margin-bottom: 3em;
+}
+.faqs p{
+    margin-left: 2em;
+    text-align: left;
+}
+#faqs-btn{
+    width: 30em;
+    height: 5em;
+    border-radius: 5em;
+    margin-bottom: 2em;
+    border: none;
+    background-color: rgb(19, 75, 24);
+}
