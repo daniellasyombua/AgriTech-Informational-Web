@@ -1,0 +1,85 @@
+.fields{
+    display: flex;
+    gap: 3cm;
+    margin-top: 5cm;
+    margin-left: 1cm;
+    margin-right: 1cm;
+
+}
+.real-time{
+    width: 35cm;
+    height: 12cm;
+    background-color: #006838;
+    border-radius: 20px
+}
+.lending{
+    width: 35cm;
+    height: 12cm;
+    background-color: #006838;
+    border-radius: 20px
+}
+.inventory{
+    width: 35cm;
+    height: 12cm;
+    background-color: #006838;
+    border-radius: 20px;
+}
+h4{
+    text-align: center;
+}
+#track{
+    font-size: 25px;
+    color: #FFA500;
+    text-align: center;
+    margin-top: 1cm;
+  
+
+}
+body{
+background-color: #020D0B;
+
+
+
+}
+h1{
+    text-align: center;
+    font-size: 40px;
+    color: #FFA500;
+}
+#needs{
+   color:#006838;
+}
+h2{
+    color: white;
+    text-align: center;
+    margin-top: 5cm;
+}
+#map{
+    width: 9cm;
+    height: 7cm;
+    border-radius: 30px;
+    position: absolute;
+    margin-top: -13cm;
+    margin-left: 2cm;
+}
+#machine{
+    width: 9cm;
+    height: 7cm;
+    border-radius: 30px;
+    position: absolute;
+    margin-top: -13cm;
+    margin-left: 2cm;  
+}
+#inventory{
+    width: 9cm;
+    height: 7cm;
+    border-radius: 30px;
+    position: absolute;
+    margin-top: -13cm;
+    margin-left: 2cm;    
+}
+p{
+    color: white;
+    margin-left: 1cm;
+    font-size: 22px;
+}
