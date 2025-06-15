@@ -1,52 +1,198 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <title>AgriTech Informational Website</title>
 </head>
+
 <body>
-    
 
+    <div class="zoom-out">
+        <div class="landing">
+            <h2>EMPOWERING AGRICULTURE THROUGH SMART CONNECTIONS</h2>
+        </div>
 
+        <nav class="navigation">
+            <a href="#" id="home">Home</a>
+            <a href="#">About Us</a>
+            <a href="#">Services</a>
+            <a href="#">Contact Us</a>
+        </nav>
 
+        <div class="faqs">
+            <div class="questions">
+                <h3>Frequently Asked <br> Questions</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor. </p>
 
-<div  id="services" class="services">
-    <h1>Services That Fit</h1>
-    <h1 id="needs">Your Needs</h1>
+                <button>Learn More</button>
+            </div>
+            <div>
+                <button id="faqs-btn" onclick="faqsquiz()"> </button><br>
 
-    <div class="fields">
-    <div class="real-time">
-        <h2>Real-time Tracking</h2>
-        <hr>
-        <p>Stay in control with live location updates for all <br> your machinery. Monitor usage ,improve  security and boost operational efficiency in real-time.</p>
-        <img src="Images/map.gif" id="map">
-        <p id="track">Protect your machines</p>
+                <div id="content" style="display: none;">
+                    <p> How do I set up a password? </p>
+                </div>
+                <button id="faqs-btn" onclick="faqsquiz()"> </button><br>
+
+                <div id="content" style="display: none;">
+                    <p> How do I set up a password? </p>
+                </div>
+
+                <button id="faqs-btn" onclick="faqsquiz()"> </button><br>
+
+                <div id="content" style="display: none;">
+                    <p> How do I set up a password? </p>
+                </div>
+
+                <button id="faqs-btn" onclick="faqsquiz()"> </button><br>
+
+                <div id="content" style="display: none;">
+                    <p> How do I set up a password? </p>
+                </div>
+            </div>
+        </div>
+        <i class="fa-solid fa-minus"></i>
+        <i class="fa-solid fa-plus"></i>
     </div>
+       <!--     Daniella -->
+    <div id="services" class="services">
+        <h1>Services That Fit</h1>
+        <h1 id="needs">Your Needs</h1>
 
-    <div class="lending">
-        <h2>Lending Management</h2>
-        <hr>
-        <p>Our system helps streamline equipment lending, improving accountability and reducing loss. <br> Easily track who has what, when and for how long.</p>
-        <img src="Images/machine.jpg" id="machine">
-        <p id="track">Connect with lenders</p>
+        <div class="fields">
+            <div class="real-time">
+                <h2>Real-time Tracking</h2>
+                <hr>
+                <p>Stay in control with live location updates for all <br> your machinery. Monitor usage ,improve
+                    security and boost operational efficiency in real-time.</p>
+                <img src="Images/map.gif" id="map">
+                <p id="track">Protect your machines</p>
+            </div>
+
+            <div class="lending">
+                <h2>Lending Management</h2>
+                <hr>
+                <p>Our system helps streamline equipment lending, improving accountability and reducing loss. <br>
+                    Easily track who has what, when and for how long.</p>
+                <img src="Images/machine.jpg" id="machine">
+                <p id="track">Connect with lenders</p>
+            </div>
+
+            <div class="inventory">
+                <h2>Inventory Management</h2>
+                <hr>
+                <p>From availability to maintenance schedules,<br> manage your inventory with precision and confidence.
+                    Get a clear overview of your <br>machinery assets.</p>
+                <img src="Images/excel.webp" id="inventory">
+                <p id="track">Protect your machines</p>
+            </div>
+        </div>
     </div>
-
-    <div class="inventory">
-        <h2>Inventory Management</h2>
-        <hr>
-        <p>From availability to maintenance schedules,<br> manage your  inventory with precision and confidence. Get a clear overview of your <br>machinery assets.</p>
-        <img src="Images/excel.webp" id="inventory">
-        <p id="track">Protect your machines</p>
-    </div>
-    </div>
-</div>
-
-
-
-
-
-    <script src="index.js"></script>
+<!-- Mercy -->
+    <section class="testimonial-section">
+        <h2>What They Say About Us</h2>
+        <div class="testimonial-container">
+            <button id="prevBtn" class="nav-btn"><i class="fa-solid fa-arrow-left"></i></button>
+            <div class="testimonial-wrapper" id="testimonialWrapper">
+                <div class="testimonial-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    <div class="card-footer">
+                        <span class="circle"></span>
+                        <span class="quote">”</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    <div class="card-footer">
+                        <span class="circle"></span>
+                        <span class="quote">”</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    <div class="card-footer">
+                        <span class="circle"></span>
+                        <span class="quote">”</span>
+                    </div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="card-header">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</p>
+                    <div class="card-footer">
+                        <span class="circle"></span>
+                        <span class="quote">”</span>
+                    </div>
+                </div>
+            </div>
+            <button id="nextBtn" class="nav-btn"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-logo">
+            <img src="./Images/AgriTecklogo.png" alt="AgriTech logo" />
+            <h2>AgriTech</h2>
+        </div>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>Contact us</h3>
+                <p>+250789345768</p>
+                <p>infor@agritech.com</p>
+                <a href="#" class="btn-link">Direct app link</a>
+            </div>
+            <div class="footer-column">
+                <h3>Support</h3>
+                <a href="#">Terms & conditions</a>
+                <a href="#">Help desk</a>
+            </div>
+            <div class="footer-column">
+                <h3>Get in touch</h3>
+                <div class="social-icons">
+                    <div class="icons">
+                        <i class="fa-brands fa-facebook-f"></i>
+                        <a href="#"> Facebook</a><br>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-brands fa-instagram"></i>
+                        <a href="#">Instagram</a> <br>
+                    </div>
+                    <div class="icons">
+                        <i class="fa-brands fa-linkedin-in"></i>
+                        <a href="#">LinkedIn</a>
+                    </div>
+                </div>
+                <a href="#" class="btn-link">Download App</a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <span>© Copyright</span>
+        </div>
+    </footer>
+    <!--     Berissa -->
+    <script src="index.js"> </script>
 </body>
 </html>
