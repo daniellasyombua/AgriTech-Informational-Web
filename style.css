@@ -31,10 +31,6 @@
     
 }
 
-.real-time h2{
-  
-}
-
 .fields p{
   color: #cfd6d5;
 
@@ -469,6 +465,7 @@ img{
     margin-left: 2em;
     padding: 0.5cm;
     color: black;
+    font-weight: bold;
 }
 .navigation a:hover{
         color:#FFA500;
