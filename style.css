@@ -8,6 +8,11 @@
   src: url(./fonts/fonnts.com-Magneta-Book-Italic.otf);
 }
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .fields{
     display: flex;
     gap: 1cm;
@@ -109,11 +114,7 @@ p{
     font-size: 22px;
     margin-top: 1cm;
 }
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+
 .onboarding-page-image{
     background-image: url('Images/tractor.jpg');
     height: 30rem;
