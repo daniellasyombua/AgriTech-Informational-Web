@@ -141,8 +141,8 @@
   display: flex;
   overflow: hidden;
   gap: 20px;
-  width: 80%;
-  max-width: 900px;
+  width: 100%;
+  max-width: 1200px;
 }
 .testimonial-card {
   background-color: rgb(55, 85, 55);
@@ -178,7 +178,7 @@
   display: inline-block;
 }
 .red { background-color: #ff5f57; }
-.yellow { background-color: #ffbd2e; }
+.yellow { background-color: #b38624; }
 .green { background-color: #28c840; }
 .card-footer {
   display: flex;
