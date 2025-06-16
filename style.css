@@ -1,3 +1,13 @@
+@font-face {
+  font-family: body-light;
+  src: url(./fonts/fonnts.com-Magneta-Thin.otf);
+}
+
+@font-face {
+  font-family: body-bold;
+  src: url(./fonts/fonnts.com-Magneta-Book-Italic.otf);
+}
+
 .fields{
     display: flex;
     gap: 3cm;
@@ -7,19 +17,32 @@
 
 }
 .real-time{
-    width: 35cm;
+    width: 25cm;
     height: 12cm;
     background-color: #006838;
-    border-radius: 20px
+    border-radius: 20px;
+    
+}
+
+.real-time h2{
+  
+}
+
+.fields p{
+  color: #cfd6d5;
+
+}
+.fields h2{
+  color: #cfd6d5;
 }
 .lending{
-    width: 35cm;
+    width: 25cm;
     height: 12cm;
     background-color: #006838;
     border-radius: 20px
 }
 .inventory{
-    width: 35cm;
+    width: 25cm;
     height: 12cm;
     background-color: #006838;
     border-radius: 20px;
@@ -36,9 +59,9 @@ h4{
 
 }
 body{
-background-color: #020D0B;
-
-
+background-color: #cfd6d5;
+font-family: body-light;
+/* position: relative; */
 
 }
 h1{
@@ -50,7 +73,7 @@ h1{
    color:#006838;
 }
 h2{
-    color: white;
+    color: black;
     text-align: center;
     margin-top: 4cm;
 }
@@ -79,7 +102,7 @@ h2{
     margin-left: 2cm;    
 }
 p{
-    color: white;
+    color: black;
     margin-left: 1cm;
     font-size: 22px;
     margin-top: 1cm;
@@ -95,7 +118,7 @@ p{
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    color: white;
+    color: black;
     filter: brightness(0.5);
     text-align: center;
     padding: 4rem 2rem;
@@ -121,7 +144,7 @@ p{
     height: 100vh;
     background-image: url('Images/background.jpg');
     background-size: cover;
-    color: white;
+    color: black;
     padding: 200px;
     background-position: center;
     text-align: center;
@@ -141,7 +164,7 @@ p{
     z-index: 1;
 }
 .landing h2{
-    color: white;
+    color: black;
     font-size:550%;
     z-index: 2;
     line-height: 1.5em;
@@ -149,23 +172,7 @@ p{
 
 
 .navigation{
-    opacity: 70%;
-    display: flex;
-    max-width: 100%;
-    position: absolute;
-    top: 1cm;
-    z-index: 2;
-    border-radius: 5em;
-    margin-left: 65em;
-
-}
-
-.navigation a{
-    text-decoration: none;
-    color: rgb(5, 43, 17);
-    font-size: xx-large;
-    margin-left: 2em;
-    padding: 0.5cm;
+  padding: 10px;
 }
 
 .questions h3{
@@ -263,9 +270,6 @@ p{
   border-radius: 50%;
   display: inline-block;
 }
-.red { background-color: #ff5f57; }
-.yellow { background-color: #b38624; }
-.green { background-color: #28c840; }
 .card-footer {
   display: flex;
   justify-content: space-between;
@@ -306,8 +310,9 @@ footer {
   top: -15%;
   left: 40%;
 }
-.footer-logo{
-  color: white;
+.footer-logo h2{
+  color:white;
+  margin-top: -10%;
 }
 
 .footer-logo img {
@@ -360,5 +365,270 @@ footer {
 .icons{
   display: flex;
   gap: 5%;
+}
+
+.button{
+    border: none;
+    padding: 15px 30px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    background-color: orange;
+    color: white;
+    text-align: center;
+    margin-top: 4%;
+    margin-left: 10%;
+}
+.tracking{
+    display: flex;
+    gap: 2cm;
+}
+.management{
+    display: flex;
+    gap: 2cm;
+}
+
+#lending img{
+  width: 70%;
+}
+.img{
+  /* width: 40%; */
+}
+
+img{
+    width: 590px;
+    border-radius: 10px;
+}
+
+#lending img{
+    padding-top: 15px;
+    border-radius: 10px;
+    margin-top: 18%;
+}
+.done{
+  display: flex;
+  flex-direction: column;
+  /* text-align: center; */
+  margin-left: 16%;
+}
+
+.googleamap{
+  margin-top: 8%;
+}
+
+.landing {
+    width: 99.2vw;
+    height: 100vh;
+    background-image: url('Images/background.jpg');
+    background-size: cover;
+    color: white;
+    padding: 200px;
+    background-position: center;
+    text-align: center;
+    position: relative;
+    margin-top: -2%;
+}
+.landing::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 7em;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+ .fa fa-minus{
+    color: white;
+    font-size: 30px;
+ }
+#title{
+    z-index: 2;
+    color: white;
+    font-size: 550%;
+    position: absolute;
+    top: 4em;
+}
+.navigation{
+    width: 100%;
+    height:8.8vh;
+    padding-top: 1.5em;
+    display: flex;
+    max-width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    justify-content: space-between;
+    /* padding-left: 50em; */
+    /* border-radius: 5em; */
+    /* margin-left: 50em; */
+    position: fixed;
+    background-color: white;
+}
+.navigation a{
+    text-decoration: none;
+    /* color: rgb(5, 43, 17); */
+    font-size: x-large;
+    margin-left: 2em;
+    padding: 0.5cm;
+    color: black;
+}
+.navigation a:hover{
+        color:#FFA500;
+        /* display: block; */
+}
+.questions{
+    margin-top: -5em;
+}
+.questions h3{
+    font-size: 350%;
+    margin-top: 2em;
+}
+.questions p{
+    font-size: 150%;
+    margin-left: 0.1em;
+    margin-top: 1em;
+}
+.faqs{
+    display: flex;
+    gap: 5em;
+    margin-left: 25em;
+    margin-top: 5em;
+    margin-bottom: 3em;
+}
+#faqs-btn{
+    width: 30em;
+    height: 4em;
+    border-radius: 5em;
+    margin-bottom: 2em;
+    border: none;
+    background-color: rgb(19, 75, 24);
+    color: white;
+    font-size: 100%;
+    text-align:20%;
+}
+.learn_morebtn{
+    width: 10em;
+    height: 3.5em;
+    background-color: #FFA500;
+    color: white;
+    border: none;
+    border-radius: 10em;
+    margin-top: 3em;
+    font-size: 100%;
+}
+.learn_morebtn:hover{
+    background-color: rgb(38, 75, 38);
+}
+
+.testimonial-card p{
+  color:#cfd6d5;
+  /* text-align: justify; */
+}
+
+.onboarding-page-background-image {
+    background-image: url('Images/tractor.jpg');
+    height: 30rem;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    filter: brightness(0.5);
+    text-align: center;
+    padding: 4rem 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.onboarding-page {
+    position: relative;
+    text-align: center;
+}
+.onboarding-page-images {
+    display: none;
+    /* position: absolute; */
+    width: 100%;
+    /* display: flex; */
+    flex-direction: row;
+    align-items: center;
+    gap: 2rem;
+    position: relative;
+    margin: -20rem auto;
+    max-width: 100%;
+    transition: transform 0.6s ease-in-out;
+}
+.onboarding-page-images img {
+    width: 100%;
+    height: auto;
+    max-width: 350px;
+    border-radius: 3rem;
+    box-shadow: 0 9px 10px rgba(10, 131, 20, 0.3);
+}
+.onboarding-page-images.active {
+    display: block;
+    position: relative;
+}
+.onboarding-page-text {
+    margin-top: -25rem;
+    left: 77rem;
+    position: absolute;
+    color: rgb(255, 165, 0);
+}
+.onboarding-page-text h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.onboarding-page-text p {
+    font-size: 1.2rem;
+}
+.onboarding-page-icons {
+    display: flex;
+    justify-content: space-around;
+    gap: 5rem;
+    color: rgb(255, 165, 0);
+    font-size: 2.5rem;
+    margin: 2rem 0;
+}
+.onboarding-page-icons i {
+    cursor: pointer;
+    border: 1px solid;
+    border-radius: 5rem;
+    padding: 2rem;
+}
+.dots-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 15rem;
+}
+.button-demo {
+    width: 1rem;
+    height: 1rem;
+    background-color: #ccc;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.button-demo.active {
+    background-color: rgb(255, 165, 0);
+}
+.services{
+  margin-top: 4%;
+}
+
+.AgriTech_logo{
+  /* position: absolute; */
+  width: 15%;
+  /* height: 18%; */
+}
+
+.logo_container{
+  display: flex;
+  flex-direction: column;
+  margin-top: -1%;
+}
+
+.logo_container span{
+    font-weight: bold;
 }
 
