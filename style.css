@@ -10,10 +10,12 @@
 
 .fields{
     display: flex;
-    gap: 3cm;
+    gap: 1cm;
     margin-top: 5cm;
     margin-left: 1cm;
     margin-right: 1cm;
+    width: 70%;
+    margin-left: 15%;
 
 }
 .real-time{
@@ -83,7 +85,7 @@ h2{
     border-radius: 30px;
     position: absolute;
     margin-top: -13cm;
-    margin-left: 2cm;
+    margin-left: 0.8cm;
 }
 #machine{
     width: 9cm;
@@ -91,15 +93,15 @@ h2{
     border-radius: 30px;
     position: absolute;
     margin-top: -13cm;
-    margin-left: 2cm;  
+    margin-left: 0.8cm;
 }
 #inventory{
     width: 9cm;
     height: 7cm;
     border-radius: 30px;
     position: absolute;
-    margin-top: -13cm;
-    margin-left: 2cm;    
+    margin-top: -13.5cm;
+    margin-left: 0.8cm;   
 }
 p{
     color: black;
@@ -185,7 +187,7 @@ p{
 }
 .faqs{
     display: flex;
-    gap: 5em;
+    gap: 12em;
     margin-left: 20em;
     margin-top: 5em;
     margin-bottom: 3em;
@@ -392,10 +394,6 @@ footer {
 #lending img{
   width: 70%;
 }
-.img{
-  /* width: 40%; */
-}
-
 img{
     width: 590px;
     border-radius: 10px;
@@ -461,15 +459,11 @@ img{
     top: 0;
     z-index: 2;
     justify-content: space-between;
-    /* padding-left: 50em; */
-    /* border-radius: 5em; */
-    /* margin-left: 50em; */
     position: fixed;
     background-color: white;
 }
 .navigation a{
     text-decoration: none;
-    /* color: rgb(5, 43, 17); */
     font-size: x-large;
     margin-left: 2em;
     padding: 0.5cm;
@@ -477,7 +471,6 @@ img{
 }
 .navigation a:hover{
         color:#FFA500;
-        /* display: block; */
 }
 .questions{
     margin-top: -5em;
@@ -525,7 +518,6 @@ img{
 
 .testimonial-card p{
   color:#cfd6d5;
-  /* text-align: justify; */
 }
 
 .onboarding-page-background-image {
@@ -629,6 +621,7 @@ img{
 }
 
 .logo_container span{
-    font-weight: bold;
+    font-weight:bold;
+    font-family: body-light;
 }
 
