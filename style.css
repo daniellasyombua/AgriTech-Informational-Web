@@ -12,6 +12,48 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    max-width: 100%;
+}
+.machines{
+  display: flex;
+  gap: 1em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
+.machines img{
+/* width: 18%; */
+border: 2px solid black;
+padding-top: 2em;
+padding-bottom: 2em;
+/* height: 10%; */
+
+}
+.machines h1{
+  font-size: 150%;
+  color: #006838;
+}
+.our-machines{
+  margin-top: 5em;
+}
+.our-machines h1{
+  margin-bottom: 2em;
+}
+#drones{
+width: 180vw;
+}
+#harvester{
+  width: 250vw;
+}
+#plough{
+  width: 235vw;
+  /* height: 150vh; */
+}
+#pruner{
+  width: 93vw;
+  height: 40vh;
+}
+#tractor-category{
+  width: 180vw;
 }
 .fields{
     display: flex;
@@ -23,32 +65,83 @@
     margin-left: 15%;
 
 }
-.real-time{
-    width: 25cm;
-    height: 12cm;
+.real-time_mgt{
+    background-image: url('Images/real time tracking.jpg');
+    background-size: cover;
+    position: relative;
+    /* width: 25cm; */
+    /* height: 12cm; */
     background-color: #006838;
     border-radius: 20px;
     
 }
-
-.fields p{
-  color: #cfd6d5;
-
+.real-time_mgt::after{
+  content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
 }
-.fields h2{
-  color: #cfd6d5;
+.real-time-content{
+  /* background-color: white; */
+  z-index: 2;
+  position:relative;
 }
-.lending{
+.lending_mgt{
+  background-image: url('Images/lendingmngt.jpg');
+  background-size: cover;
+  position: relative;
     width: 25cm;
     height: 12cm;
     background-color: #006838;
     border-radius: 20px
 }
-.inventory{
+.lending_mgt::after{
+  content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.lending-content{
+  z-index: 2;
+  position:relative;
+}
+.inventory_mgt{
+  background-image: url('Images/inventorymanagement.jpg');
+  background-size: cover;
+  position: relative;
     width: 25cm;
     height: 12cm;
     background-color: #006838;
     border-radius: 20px;
+}
+.inventory_mgt::after{
+  content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+.inventory-content{
+  z-index: 2;
+  position:relative;
+}
+.fields p{
+  color: white;
+
+}
+.fields h2{
+  color: white;
 }
 h4{
     text-align: center;
@@ -62,8 +155,10 @@ h4{
 
 }
 body{
-background-color: #cfd6d5;
+width: 99.2vw;
+background-color: white;
 font-family: body-light;
+overflow-x: hidden;
 /* position: relative; */
 
 }
@@ -138,10 +233,10 @@ p{
     .zoom-out {cursor: zoom-out;}
 }
 
-.landing {
+#landing {
     width: 99.2vw;
-    height: 100vh;
-    background-image: url('Images/background.jpg');
+    height: 103.9vh;
+    background-image: url('Images/Background.jpg');
     background-size: cover;
     color: black;
     padding: 200px;
@@ -159,16 +254,52 @@ p{
     right: 0;
     bottom: 0;
     top: 7em;
-    background-color: rgba(99, 95, 95, 0.5);
+    background-color: rgba(0, 0, 0, 0.5);
     z-index: 1;
 }
-.landing h2{
-    color: black;
-    font-size:550%;
+#landing h2{
+    color: rgb(252, 248, 248);
+    font-size:400%;
     z-index: 2;
     line-height: 1.5em;
+    text-align: justify;
+    margin-top: -0.2em;
+    margin-left: -1em;
+}
+#landing p{
+  position: absolute;
+  color: #FFA500;
+    font-size:200%;
+    z-index: 2;
+    line-height: 1.5em;
+    text-align: justify;
+    margin-top: 13em;
+    margin-left: -2em;
+}
+#tractor{
+  opacity: 70%;
+  z-index: 2;
+  position: absolute;
+  left:30em ;
+  width: 90vw;
+  height: 120vh;
 }
 
+#service {
+  padding-top: 2em;
+  padding-bottom: 3em;
+  font-size: 250%;
+  height: 15vh;
+  text-align: center;
+    /* margin-top: 2em; */
+  background-color: white;
+}
+#use{
+  color: green; 
+}
+#app{
+  color:FFA500;
+}
 
 .navigation{
   padding: 10px;
@@ -201,14 +332,78 @@ p{
     border: none;
     background-color: rgb(19, 75, 24);
 }
+.done h1{
+  margin-top: 3em;
+  margin-bottom: 1em;
+  color: FFA500;
+}
+#quiz{
+  font-size: 250%;
+  height: 15vh;
+  text-align: center;
+    margin-top: 2em;
+    color: #FFA500;
+}
+.choice{
+  margin-left: 20em;
+  margin-bottom: 8em;
+  width: 80%;
+  /* background-color: #865906; */
+  display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(20em,5fr));
+    justify-items: center;
+    /* gap: 55em 0em; */
+  text-align: center;
+  
+}
+#choice p{
+margin-top: -2.6em;
+}
+
+#cost{
+margin-left: 9em;
+width: 100%;
+}
+#cost h3{
+  color: green;
+}
+#satisfied{
+margin-left: 9em;
+width: 100%;
+}
+#satisfied h3{
+  color: green;
+}
+#risk{
+margin-left: 9em;
+width: 100%;
+}
+#risk h3{
+  color: green;
+}
+#cost-reduction{
+  top: 188em;
+  width: 10vw;
+}
+
+#risk-mgt{
+  width: 10vw;
+}
+#satisfaction{
+  width: 10vw;
+}
+
 
 .testimonial-section {
   padding: 50px 20px;
   text-align: center;
 }
 .testimonial-section h2 {
-  font-size: 28px;
-  margin-bottom: 30px;
+  font-size: 250%;
+  height: 15vh;
+  text-align: center;
+    margin-top: 2em;
+    color: #FFA500;
 }
 .testimonial-container {
   display: flex;
@@ -287,6 +482,7 @@ p{
 }
 
 footer {
+  width: 100%;
   background: #1f1f1f;
   padding: 40px 20px 10px 20px;
   text-align: center;
@@ -347,6 +543,7 @@ footer {
   width: 50%;
 }
 .footer-bottom {
+  width: 100%;
   background-color: #24b9b6;
   padding: 10px;
   text-align: center;
@@ -401,12 +598,8 @@ img{
     border-radius: 10px;
     margin-top: 18%;
 }
-.done{
-  display: flex;
-  flex-direction: column;
-  /* text-align: center; */
-  margin-left: 16%;
-}
+
+ 
 
 .googleamap{
   margin-top: 8%;
@@ -447,7 +640,7 @@ img{
     top: 4em;
 }
 .navigation{
-    width: 100%;
+    width: 99.2vw;
     height:8.8vh;
     padding-top: 1.5em;
     display: flex;
@@ -519,7 +712,8 @@ img{
 }
 
 .onboarding-page-background-image {
-    background-image: url('Images/tractor.jpg');
+    background-image: url('Images/App background.jpg');
+    width: 99.2vw;
     height: 30rem;
     background-repeat: no-repeat;
     background-size: cover;
